@@ -1,0 +1,261 @@
+@import url(reset.css);
+@import url(header.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 100%/1.5 Cambria, Garamond, Georgia, Times, serif;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #4e7c92;
+  -webkit-tap-highlight-color: #4e7c92;
+}
+
+a:hover {
+  color: #4e7c92;
+}
+
+img,
+iframe {
+  width: 100%;
+}
+
+::-moz-selection {
+  background: #4e7c92;
+  color: #fff;
+}
+
+::selection {
+  background: #4e7c92;
+  color: #fff;
+}
+
+nav ul {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  max-height: 1px;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media (min-width: 480px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #4e7c92;
+    text-align: center;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+nav li {
+  background: #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 480px) {
+  nav li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background: #4e7c92;
+  }
+  nav li:hover {
+    background: #333;
+  }
+}
+
+nav a {
+  display: block;
+  widows: 100%;
+  height: 100%;
+}
+
+@media (min-width: 480px) {
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 0.5rem;
+  }
+}
+
+nav a:hover {
+  color: green;
+}
+
+nav #pull {
+  display: block;
+  background-color: #4e7c92;
+  height: 32px;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+@media (min-width: 480px) {
+  nav #pull {
+    display: none;
+  }
+}
+
+nav #pull::after {
+  content: "";
+  background: url(../img/nav-icon.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  display: inline-block;
+}
+
+.show-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.show-nav nav ul li {
+  padding: 1rem;
+}
+
+header {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  header p {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: pink;
+  }
+}
+
+header h1 + p {
+  padding-top: 1rem;
+  border-top: 3px double #dbd1b5;
+}
+
+header p + p {
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #666;
+}
+
+section {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  width: 60%;
+  padding-right: 24px;
+}
+
+aside {
+  float: right;
+  width: 40%;
+}
+
+@media (min-width: 480px) {
+  section {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    color: red;
+  }
+  article {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    width: 60%;
+    padding-right: 24px;
+  }
+  aside {
+    float: right;
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

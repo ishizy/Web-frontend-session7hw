@@ -1,0 +1,12 @@
+{"liveSassCompile.settings.formats": [
+    {
+        "savePath": "app/css",
+        "format": "expanded"
+    }
+],
+"liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/other/**"
+]
+}
